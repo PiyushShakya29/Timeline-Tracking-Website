@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(circle at center, #1a1a1a, #000000 100%);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #66ccff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.timeline-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.timeline-wrap {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(104, 114, 128, 0.2);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.timeline-empty {
+    width: 40%;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7), 0 0 30px rgba(70, 130, 180, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.timeline-icon.active {
+    background: #66ccff;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7), 0 0 40px #44BCFF;
+}
+
+.timeline-icon:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px #66ccff, 0 0 40px #44BCFF;
+}
+
+.timeline-content {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7), 0 0 30px rgba(70, 130, 180, 0.5);
+    transition: box-shadow 0.3s ease;
+    margin: 40px;
+}
+
+.timeline-content.active {
+    background: #66ccff;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7), 0 0 40px #44BCFF;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px #66ccff, 0 0 40px #44BCFF;
+}
+
+.timeline-content h3 {
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    color: white;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.left-timeline {
+    flex-direction: row-reverse;
+}
